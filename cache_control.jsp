@@ -8,6 +8,13 @@
 </head>
 <body>
 	<h1>Cache Control</h1>
+	
+	<%
+		response.setHeader("Cache-Control", "no-cache");
+		response.setHeader("Pragma", "no-cache");
+		response.setDateHeader("Expire", 0);
+	
+	%>
 
 <!--
 cache
